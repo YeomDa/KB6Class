@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const id = 'tetz';
+        const pw = '1234';
+
+        const idInput = prompt('아이디를 입력해주세요');
+        const pwInput = prompt('비밀번호를 입력해주세요');
+
+        if (id === idInput && pw === pwInput) {
+            console.log('로그인 성공');
+        }
+        else if (id !== idInput && pw === pwInput) {
+            console.log('id가 틀렸습니다');
+        }
+        else if (id === idInput && pw !== pwInput) {
+            console.log('pw가 틀렸습니다');
+        }
+        else {
+            console.log('망했어요');
+        }
+
+        // if(id!== idInput&&pw!==pwInput){
+        //     return console.log('망했어요');
+        // }
+        // if(id===idInput&&pw!==pwInput){
+        //     return console.log('pw가 틀렸습니다');
+        // }
+        // if(id!==idInput&&pw===pwInput){
+        //     return console.log('id가 틀렸습니다');
+        // }
+        // console.log('로그인 성공'); early return
+    </script>
+</body>
+
+</html>
